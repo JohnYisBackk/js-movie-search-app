@@ -8,7 +8,7 @@ Search for your favorite movies and TV shows using the TVMaze API and instantly 
 
 ## 🚀 Live Demo
 
-👉 
+👉 https://johnyisbackk.github.io/js-movie-search-app/
 
 ---
 
