@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Movie Search App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Clash+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <span class="eyebrow">Movie Finder</span>
+        <h1>Search movies instantly.</h1>
+        <p>Find movies by title and render results from a public movie API.</p>
+
+        <form id="searchForm" class="search-box">
+          <input
+            type="text"
+            id="movieInput"
+            placeholder="Search for Batman. Matrix, Avatar..."
+          />
+          <button id="searchBtn" type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="content">
+        <div class="state loading hidden" id="loading">Searching movies...</div>
+
+        <div class="state error hidden" id="errorMessage">
+          No movies found. Try another title.
+        </div>
+
+        <div class="results-header">
+          <div>
+            <span class="section-label">Results</span>
+            <h2 id="resultsTitle">Popular search</h2>
+          </div>
+
+          <span id="resultsCount" class="results-count">0 movies</span>
+        </div>
+
+        <section id="moviesGrid" class="movies-grid"></section>
+      </section>
+    </main>
+  </body>
+</html>
